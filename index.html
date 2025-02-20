@@ -1,167 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Bootstrap css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- style sheet -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Charan Uppalapu - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .section { padding: 60px 0; }
+        .profile-img { width: 150px; border-radius: 50%; }
+    </style>
 </head>
 <body>
-
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">My Portfolio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="hero-section text-center">
-    <div class="container">
-      <h1>Welcome to My Portfolio</h1>
-      <p>I'm a Computer Science Student passionate about technology and coding.</p>
-    </div>
-  </section>
-
-  <!-- About Me Section -->
-  <section id="about" class="py-5">
-    <div class="container">
-      <h2 class="text-center">About Me</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <p>Hello! I'm a Computer Science student with a strong interest in software development and data analysis. I enjoy solving complex problems and creating innovative solutions using technology. I am always eager to learn new technologies and expand my skill set.</p>
-        </div>
-        <div class="col-md-6">
-          <img src="https://via.placeholder.com/300" class="img-fluid rounded-circle" alt="Your Photo">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="bg-light py-5">
-    <div class="container">
-      <h2 class="text-center">Skills</h2>
-      <div class="row">
-        <div class="col-md-4 text-center">
-          <h4>Programming Languages</h4>
-          <span class="badge bg-primary">Python</span>
-          <span class="badge bg-secondary">Java</span>
-          <span class="badge bg-success">C++</span>
-          <span class="badge bg-danger">JavaScript</span>
-        </div>
-        <div class="col-md-4 text-center">
-          <h4>Frameworks & Tools</h4>
-          <span class="badge bg-warning">Django</span>
-          <span class="badge bg-info">React</span>
-          <span class="badge bg-dark">Node.js</span>
-          <span class="badge bg-light text-dark">Git</span>
-        </div>
-        <div class="col-md-4 text-center">
-          <h4>Databases</h4>
-          <span class="badge bg-primary">MySQL</span>
-          <span class="badge bg-secondary">MongoDB</span>
-          <span class="badge bg-success">PostgreSQL</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="py-5">
-    <div class="container">
-      <h2 class="text-center">My Projects</h2>
-      <div class="row">
-        <!-- Project 1 -->
-        <div class="col-md-4">
-          <div class="card project-card">
-            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 1">
-            <div class="card-body">
-              <h5 class="card-title">Project 1</h5>
-              <p class="card-text">A brief description of the project, technologies used, and what it aims to solve.</p>
-              <a href="#" class="btn btn-primary">View Project</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Sai Charan Uppalapu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
             </div>
-          </div>
         </div>
-        <!-- Project 2 -->
-        <div class="col-md-4">
-          <div class="card project-card">
-            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 2">
-            <div class="card-body">
-              <h5 class="card-title">Project 2</h5>
-              <p class="card-text">A brief description of the project, technologies used, and what it aims to solve.</p>
-              <a href="#" class="btn btn-primary">View Project</a>
-            </div>
-          </div>
+    </nav>
+    
+    <section id="about" class="section text-center">
+        <div class="container">
+            <img src="profile.jpg" alt="Sai Charan Uppalapu" class="profile-img">
+            <h2>About Me</h2>
+            <p>Driven tech professional with expertise in Java, Data Structures, Frontend, and Data Management.</p>
         </div>
-        <!-- Project 3 -->
-        <div class="col-md-4">
-          <div class="card project-card">
-            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 3">
-            <div class="card-body">
-              <h5 class="card-title">Project 3</h5>
-              <p class="card-text">A brief description of the project, technologies used, and what it aims to solve.</p>
-              <a href="#" class="btn btn-primary">View Project</a>
-            </div>
-          </div>
+    </section>
+    
+    <section id="experience" class="section bg-light">
+        <div class="container">
+            <h2>Experience</h2>
+            <p><strong>Java Full Stack Trainee - Codegnan Destination</strong></p>
+            <ul>
+                <li>Developed and maintained robust web applications using Java, Spring, and Hibernate.</li>
+                <li>Gained expertise in RESTful API design and scalable web services.</li>
+            </ul>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="bg-light py-5">
-    <div class="container">
-      <h2 class="text-center">Contact Me</h2>
-      <div class="row">
-        <div class="col-md-6 mx-auto">
-          <form>
-            <div class="mb-3">
-              <label for="name" class="form-label">Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Your Name" required>
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="Your Email" required>
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary w-100">Send Message</button>
-          </form>
+    </section>
+    
+    <section id="education" class="section">
+        <div class="container">
+            <h2>Education</h2>
+            <p><strong>Bachelor of Technology in Computer Science</strong></p>
+            <p>Usha Rama College of Engineering and Technology (7.53 CGPA)</p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
-  </footer>
-
-  <!-- Bootstrap JS and dependencies -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    </section>
+    
+    <section id="skills" class="section bg-light">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>Java</li>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>SQL & MySQL</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <p><strong>Comparative Studies on Datasets Classification with K-Fold Cross Validation</strong></p>
+            <ul>
+                <li>Developed a user-friendly ML model evaluation tool.</li>
+                <li>Supports multiple algorithms including SVM, Decision Tree, KNN, and Random Forest.</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="contact" class="section bg-light text-center">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:saic8688@gmail.com">saic8688@gmail.com</a></p>
+            <p>Phone: 8179351483</p>
+            <p><a href="https://github.com/saicharan1100">GitHub</a> | <a href="https://linkedin.com/in/saicharan-uppalapu">LinkedIn</a></p>
+        </div>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
